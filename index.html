@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <title>Vinayak & Shruti Wedding | #TwoHeartsOneViSh | 02 & 03 Dec 2026 | Goenka Farm, Nagpur</title>
+
+  <meta name="description"
+    content="Royal Wedding Celebrations of Vinayak Kabra & Shruti Sikchi on 02 & 03 December 2026 at Goenka Farm, Nagpur. Access complete itinerary, event map locations & directions." />
+  <meta property="og:title" content="Vinayak & Shruti Wedding | #TwoHeartsOneViSh" />
+  <meta property="og:description"
+    content="Join us in celebrating our wedding on 02 & 03 December 2026 at Goenka Farm, Nagpur. Explore itinerary, dress codes, and GPS map directions." />
+  <meta name="theme-color" content="#1c0308" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cinzel:wght@400;600;700;800;900&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Great+Vibes&family=Montserrat:wght@300;400;500;600;700&family=Noto+Serif+Devanagari:wght@400;500;600;700;800&family=Rozha+One&family=Yatra+One&display=swap"
+    rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Background Petal Shower Canvas -->
+  <canvas id="petalCanvas"
+    style="position:fixed; top:0; left:0; width:100%; height:100%; pointer-events:none; z-index:1;"></canvas>
+
+  <!-- ==========================================================================
+       TOP NAVIGATION BAR
+       ========================================================================== -->
+  <header class="royal-header">
+    <div class="container nav-inner">
+      <a href="#hero" class="brand-monogram">
+        <img src="assets/img/vs_logo.png" alt="Vinayak & Shruti Monogram" />
+        <div class="brand-text">
+          <span class="brand-title">Vinayak & Shruti</span>
+          <span class="brand-hashtag">#TwoHeartsOneViSh</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" id="navMenu">
+        <a href="#hero" class="nav-link active" data-i18n="nav_home">Home</a>
+        <a href="#itinerary" class="nav-link" data-i18n="nav_itinerary">Itinerary</a>
+        <a href="#venue" class="nav-link" data-i18n="nav_venue">Venue & Map</a>
+      </nav>
+
+      <!-- Quick Action Controls -->
+      <div class="nav-actions">
+        <!-- Ambient Music Toggle -->
+        <button id="btnMusicToggle" class="btn-icon-pill btn-music" title="Toggle Royal Music">
+          <i class="fa-solid fa-volume-xmark"></i>
+        </button>
+
+        <!-- Language Switcher (EN default, HI toggle) -->
+        <div class="lang-toggle">
+          <button class="lang-btn active" data-lang="en">EN</button>
+          <button class="lang-btn" data-lang="hi">हिन्दी</button>
+        </div>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-nav-toggle" aria-label="Toggle Navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       HERO SECTION (ROYAL WELCOME)
+       ========================================================================== -->
+  <section class="hero-section" id="hero">
+    <div class="hero-backdrop">
+      <img src="assets/img/couple_photo.jpg" alt="Vinayak & Shruti" class="hero-backdrop-img" />
+      <div class="hero-overlay"></div>
+    </div>
+
+    <div class="hero-content">
+      <!-- Auspicious Invocation Header -->
+      <div class="ganesh-invocation">
+        <img src="assets/img/ganesh_icon.png" alt="Shri Ganesh Icon" class="ganesh-icon-img" />
+        <div class="invocation-text">
+          <div class="invocation-line" data-i18n="ganesh_invocation_1">|| Shri Ganeshay Namah ||</div>
+          <div class="invocation-line" data-i18n="ganesh_invocation_2">|| Jai Shri Dadaji Ki ||</div>
+        </div>
+        <div class="grace-text" data-i18n="dadaji_grace">By the boundless grace of Shri Dadaji Maharaj</div>
+      </div>
+
+      <!-- Couple Names & Royal Monogram -->
+      <div class="hero-names-wrapper">
+        <h1 class="hero-title-main">
+          <div class="hero-names-flow">
+            <div class="hero-name-part groom-part">
+              <span class="name-groom" data-i18n="groom_name">Vinayak</span>
+              <span class="hero-weds" data-i18n="weds">weds</span>
+            </div>
+            <div class="hero-name-part bride-part">
+              <span class="name-bride" data-i18n="bride_name">Shruti</span>
+            </div>
+          </div>
+        </h1>
+
+        <div class="hero-monogram-center">
+          <img src="assets/img/vs_logo.png" alt="#TwoHeartsOneViSh Monogram" />
+        </div>
+
+        <div class="hero-hashtag" data-i18n="hashtag">#TwoHeartsOneViSh</div>
+      </div>
+
+      <!-- Dates & Venue -->
+      <div class="hero-date-venue">
+        <div class="hero-dates-badge" data-i18n="wedding_dates">02 & 03 December 2026</div>
+        <div class="hero-venue-line">
+          <i class="fa-solid fa-location-dot"></i>
+          <span data-i18n="wedding_venue_short">Goenka Farm, Nagpur</span>
+        </div>
+      </div>
+
+      <!-- Live Countdown Clock -->
+      <div class="countdown-container">
+        <div class="countdown-title" id="countdownHeading" data-i18n="countdown_heading">Celebrations Begin In</div>
+        <div class="countdown-grid">
+          <div class="countdown-item">
+            <div class="countdown-num" id="countDays">00</div>
+            <div class="countdown-label" data-i18n="days">Days</div>
+          </div>
+          <div class="countdown-item">
+            <div class="countdown-num" id="countHours">00</div>
+            <div class="countdown-label" data-i18n="hours">Hours</div>
+          </div>
+          <div class="countdown-item">
+            <div class="countdown-num" id="countMins">00</div>
+            <div class="countdown-label" data-i18n="mins">Minutes</div>
+          </div>
+          <div class="countdown-item">
+            <div class="countdown-num" id="countSecs">00</div>
+            <div class="countdown-label" data-i18n="secs">Seconds</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Primary Action Buttons -->
+      <div class="hero-cta-group">
+        <a href="#itinerary" class="btn-royal-primary">
+          <i class="fa-solid fa-compass"></i>
+          <span data-i18n="btn_explore_itinerary">Explore Itinerary</span>
+        </a>
+        <a href="#venue" class="btn-royal-outline">
+          <i class="fa-solid fa-map-location-dot"></i>
+          <span data-i18n="btn_get_directions">Get Directions</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       WEDDING ITINERARY & CELEBRATIONS SECTION (SEARCHABLE)
+       ========================================================================== -->
+  <section class="section itinerary-section" id="itinerary">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge" data-i18n="itinerary_badge">Royal Program Guide</span>
+        <h2 class="section-title text-gold-gradient" data-i18n="itinerary_title">Wedding Itinerary</h2>
+        <div class="ornamental-divider"><i class="fa-solid fa-calendar-star"></i></div>
+      </div>
+
+      <!-- Controls: Search Input & Day Tabs -->
+      <div class="itinerary-controls">
+        <div class="search-box-wrapper">
+          <input type="text" id="itinerarySearchInput" class="search-input"
+            placeholder="Search ceremonies, venues, dates, timings..." data-i18n-placeholder="search_placeholder"
+            autocomplete="off" />
+          <button id="searchClearBtn" class="search-icon-btn" style="display:none;" title="Clear Search">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+          <button class="search-icon-btn" style="right: 1.2rem; pointer-events:none;">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+
+        <div class="filter-tabs-wrapper">
+          <button class="tab-btn active" data-day="all">
+            <i class="fa-solid fa-list-check"></i>
+            <span data-i18n="tab_all">All Celebrations (8)</span>
+          </button>
+          <button class="tab-btn" data-day="day1">
+            <i class="fa-regular fa-sun"></i>
+            <span data-i18n="tab_day1">Day 1: Dec 02 (Carnival, Mayra, Sangeet)</span>
+          </button>
+          <button class="tab-btn" data-day="day2">
+            <i class="fa-solid fa-ring"></i>
+            <span data-i18n="tab_day2">Day 2: Dec 03 (Nikasi, Swagat, Varmala, Phere, Reception)</span>
+          </button>
+        </div>
+
+        <div class="filter-results-bar" id="filterCount">
+          Showing 8 of 8 celebrations
+        </div>
+      </div>
+
+      <!-- Event Cards Grid (Rendered dynamically via script.js) -->
+      <div class="events-grid" id="eventsGrid">
+        <!-- Populated via JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       VENUE & CAMPUS MAP NAVIGATION SECTION
+       ========================================================================== -->
+  <section class="section venue-section" id="venue">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge" data-i18n="venue_badge">Destination & Logistics</span>
+        <h2 class="section-title text-gold-gradient" data-i18n="venue_title">Venue & Campus Navigation</h2>
+        <p class="section-subtitle" data-i18n="venue_subtitle">
+          Goenka Farm is an expansive destination resort situated along National Highway 6, Nagpur.
+        </p>
+        <div class="ornamental-divider"><i class="fa-solid fa-map-pin"></i></div>
+      </div>
+
+      <!-- Main Venue Card -->
+      <div class="venue-card-main">
+        <div class="venue-hero-details">
+          <div>
+            <span class="venue-badge-pill">
+              <i class="fa-solid fa-hotel"></i> Destination Resort & Wedding Venue
+            </span>
+            <h3 class="venue-title-large" data-i18n="venue_name">Goenka Farm, Nagpur</h3>
+            <p class="venue-full-address" data-i18n="venue_full_addr">
+              National Highway 6, Mahalgaon (Near Kamptee / Bhandara Road), Nagpur, Maharashtra - 441104
+            </p>
+
+            <div class="venue-quick-actions">
+              <a href="https://www.google.com/maps/search/?api=1&query=Goenka+Farm+Nagpur" target="_blank"
+                rel="noopener noreferrer" class="btn-royal-primary">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                <span data-i18n="btn_open_maps">Open in Google Maps</span>
+              </a>
+
+              <a href="https://www.google.com/maps/dir/?api=1&destination=Goenka+Farm+Nagpur" target="_blank"
+                rel="noopener noreferrer" class="btn-royal-outline">
+                <i class="fa-solid fa-diamond-turn-right"></i>
+                <span data-i18n="btn_gps_directions">GPS Directions</span>
+              </a>
+
+              <button class="btn-royal-outline" onclick="copyVenueAddress()">
+                <i class="fa-regular fa-copy"></i>
+                <span data-i18n="btn_copy_address">Copy Address</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Campus Sub-Venues Guide -->
+          <div class="subvenues-grid">
+            <div class="subvenue-item">
+              <div class="subvenue-info">
+                <div class="subvenue-icon"><i class="fa-solid fa-umbrella-beach"></i></div>
+                <div class="subvenue-text">
+                  <h4 data-i18n="subvenue_ocean">Ocean Theme Park</h4>
+                  <p data-i18n="subvenue_ocean_desc">Carnival festivities & games</p>
+                </div>
+              </div>
+              <a href="https://maps.app.goo.gl/wEuBEfCRNGwN46Ki9" target="_blank" rel="noopener noreferrer"
+                class="subvenue-map-link">
+                <span>Maps</span> <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+
+            <div class="subvenue-item">
+              <div class="subvenue-info">
+                <div class="subvenue-icon"><i class="fa-solid fa-landmark"></i></div>
+                <div class="subvenue-text">
+                  <h4 data-i18n="subvenue_royal_hall">Royal Hall</h4>
+                  <p data-i18n="subvenue_royal_hall_desc">Phere & Groom Side Mayra</p>
+                </div>
+              </div>
+              <a href="https://maps.app.goo.gl/WsxpwravFLjAMfkU9" target="_blank" rel="noopener noreferrer"
+                class="subvenue-map-link">
+                <span>Maps</span> <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+
+            <div class="subvenue-item">
+              <div class="subvenue-info">
+                <div class="subvenue-icon"><i class="fa-solid fa-hotel"></i></div>
+                <div class="subvenue-text">
+                  <h4 data-i18n="subvenue_t_hall">T Hall</h4>
+                  <p data-i18n="subvenue_t_hall_desc">Bride Side Mayra Ceremony</p>
+                </div>
+              </div>
+              <a href="https://maps.app.goo.gl/eamQWCzf3pmo1VXo6" target="_blank" rel="noopener noreferrer"
+                class="subvenue-map-link">
+                <span>Maps</span> <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+
+            <div class="subvenue-item">
+              <div class="subvenue-info">
+                <div class="subvenue-icon"><i class="fa-solid fa-water"></i></div>
+                <div class="subvenue-text">
+                  <h4 data-i18n="subvenue_varmala">Wavepool</h4>
+                  <p data-i18n="subvenue_varmala_desc">Baraat Swagat & Varmala Ceremony</p>
+                </div>
+              </div>
+              <a href="https://maps.app.goo.gl/HTzDcDdaKdifwyDs7" target="_blank" rel="noopener noreferrer"
+                class="subvenue-map-link">
+                <span>Maps</span> <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+
+            <div class="subvenue-item">
+              <div class="subvenue-info">
+                <div class="subvenue-icon"><i class="fa-solid fa-guitar"></i></div>
+                <div class="subvenue-text">
+                  <h4 data-i18n="subvenue_sangeet">Sangeet Lawn</h4>
+                  <p data-i18n="subvenue_sangeet_desc">Sangeet Sandhya Night</p>
+                </div>
+              </div>
+              <a href="https://maps.app.goo.gl/vqdk8gpwUs3j4wL76" target="_blank" rel="noopener noreferrer"
+                class="subvenue-map-link">
+                <span>Maps</span> <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+
+            <div class="subvenue-item">
+              <div class="subvenue-info">
+                <div class="subvenue-icon"><i class="fa-solid fa-building-user"></i></div>
+                <div class="subvenue-text">
+                  <h4 data-i18n="subvenue_nikasi">NR Building</h4>
+                  <p data-i18n="subvenue_nikasi_desc">Nikasi Procession</p>
+                </div>
+              </div>
+              <a href="https://maps.app.goo.gl/7PsHjgx6YdAcdi4V9" target="_blank" rel="noopener noreferrer"
+                class="subvenue-map-link">
+                <span>Maps</span> <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+
+            <div class="subvenue-item">
+              <div class="subvenue-info">
+                <div class="subvenue-icon"><i class="fa-solid fa-champagne-glasses"></i></div>
+                <div class="subvenue-text">
+                  <h4 data-i18n="subvenue_reception">Main Lawn</h4>
+                  <p data-i18n="subvenue_reception_desc">Swagat Samaroh (Reception Banquet)</p>
+                </div>
+              </div>
+              <a href="https://maps.app.goo.gl/LtBnkYUiBihqXVHP9" target="_blank" rel="noopener noreferrer"
+                class="subvenue-map-link">
+                <span>Maps</span> <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Interactive Google Map Embed -->
+          <div class="map-embed-wrapper">
+            <iframe src="https://maps.google.com/maps?q=Goenka+Farm+Nagpur&t=&z=14&ie=UTF8&iwloc=&output=embed"
+              title="Goenka Farm Nagpur Map" loading="lazy">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       ROYAL FOOTER
+       ========================================================================== -->
+  <footer class="royal-footer">
+    <div class="container footer-content">
+      <img src="assets/img/vs_logo.png" alt="Vinayak & Shruti" class="footer-monogram" />
+      <h3 class="footer-couple">Vinayak & Shruti</h3>
+      <span class="footer-hashtag">#TwoHeartsOneViSh</span>
+      <p class="footer-invitation-note" data-i18n="footer_note">
+        Your presence, blessings, and warm smiles are the most cherished gifts as Vinayak & Shruti begin their eternal
+        journey of love and togetherness.
+      </p>
+
+      <div style="display:flex; justify-content:center; margin-bottom:2rem;">
+        <button class="btn-icon-pill" onclick="copyVenueAddress()">
+          <i class="fa-solid fa-location-dot"></i> <span data-i18n="btn_copy_address">Copy Venue Address</span>
+        </button>
+      </div>
+
+      <div class="footer-copy" data-i18n="footer_copy">
+        Celebrated with love by Kabra & Sikchi Parivar • Goenka Farm, Nagpur
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       FLOATING QUICK ACTION DOCK (FOR SMARTPHONES)
+       ========================================================================== -->
+  <div class="floating-dock">
+    <a href="#hero" class="dock-btn">
+      <i class="fa-solid fa-house"></i>
+      <span data-i18n="nav_home">Home</span>
+    </a>
+    <a href="#itinerary" class="dock-btn">
+      <i class="fa-solid fa-calendar-days"></i>
+      <span data-i18n="nav_itinerary">Itinerary</span>
+    </a>
+    <a href="#venue" class="dock-btn">
+      <i class="fa-solid fa-map-location-dot"></i>
+      <span data-i18n="nav_venue">Map</span>
+    </a>
+  </div>
+
+  <!-- Main Scripts -->
+  <script src="script.js"></script>
+</body>
+
+</html>
